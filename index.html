@@ -1,0 +1,76 @@
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
+    <script src="colreorderwithresize.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+<body>
+    <button id="btn-show-all-children" type="button">Expand All</button>
+    <button id="btn-hide-all-children" type="button">Collapse All</button>
+
+    <table id="exampleTable" class="display">
+        <thead>
+            <tr>
+                <th class="machine-type-header">MachineType</th>
+                <th class="machine-id-header">MachineID</th>
+                <th class="created-time-header">CreatedTime</th>
+                <th class="updated-time-header">UpdatedTime</th>
+                <th class="comment-header">Comment</th>
+                <th class="action-header">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>SHM800</td>
+                <td></td>
+                <td>2020-12-12 16:20:00</td>
+                <td>2020-12-12 16:20:00</td>
+                <td>shm800 product</td>
+                <td>Add | Modify</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>SHM600</td>
+                <td></td>
+                <td>2020-12-11 17:20:00</td>
+                <td>2020-12-11 17:20:00</td>
+                <td>shm600 product</td>
+                <td>Add | Modify</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="display:none">
+        <table id="exampleTable_2" class="display select" width="100%">
+            <thead>
+                <tr>
+                    <th class="machine-id-header">MachineID</th>
+                    <th class="created-time-header">CreatedTime</th>
+                    <th class="updated-time-header">UpdatedTime</th>
+                    <th class="comment-header">Comment</th>
+                    <th class="action-header">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SHM600-01</td>
+                    <td>2020-12-11 17:20:00</td>
+                    <td>2020-12-11 17:20:00</td>
+                    <td>shm600 product</td>
+                    <td>Modify</td>
+                </tr>
+                <tr>
+                    <td>SHM600-01</td>
+                    <td>2020-12-11 17:20:00</td>
+                    <td>2020-12-11 17:20:00</td>
+                    <td>shm600 product</td>
+                    <td>Modify</td>
+                </tr>
+                </tfoot>
+        </table>
+    </div>
+</body>
+</html>

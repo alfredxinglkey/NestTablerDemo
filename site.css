@@ -1,0 +1,35 @@
+.details-control {
+  width: 20px;
+}
+table {
+  table-layout: fixed !important;
+}
+
+#exampleTable{
+    width: 1200px;
+}
+
+.machine-type-header {
+  width: 100% !important;
+  background-color: pink;
+}
+.machine-id-header {
+  background-color: red;
+  width: 100% !important;
+}
+.created-time-header {
+  background-color: green;
+  width: 100% !important;
+}
+.updated-time-header {
+  background-color: yellow;
+  width: 100% !important;
+}
+.comment-header {
+  background-color: black;
+  width: 100% !important;
+}
+.action-header {
+  background-color: blue;
+  width: 100% !important;
+}
