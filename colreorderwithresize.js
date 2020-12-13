@@ -55,11 +55,6 @@ $(document).ready(function () {
                 'searching':false,
                 'info':false,
             });
-            //$(`#exampleTable_${iTableCounter} thead`).css("display", "none");
-            //$(`#exampleTable_${iTableCounter}`).css("margin-left", "240px");
-            //$(`#exampleTable_${iTableCounter}`).css("width", "80%");
-            //$(`#exampleTable_${iTableCounter}`).css("margin-right", 0);
-            $(`#exampleTable_${iTableCounter}_wrapper`).css("background-color", "black");
             iTableCounter = iTableCounter + 1;
         }
     });
