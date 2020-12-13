@@ -13,12 +13,12 @@
     <table id="exampleTable" class="display">
         <thead>
             <tr>
-                <th class="machine-type-header">MachineType</th>
-                <th class="machine-id-header">MachineID</th>
-                <th class="created-time-header">CreatedTime</th>
-                <th class="updated-time-header">UpdatedTime</th>
-                <th class="comment-header">Comment</th>
-                <th class="action-header">Action</th>
+                <th id="machine-type-header">MachineType</th>
+                <th id="machine-id-header">MachineID</th>
+                <th id="created-time-header">CreatedTime</th>
+                <th id="updated-time-header">UpdatedTime</th>
+                <th id="comment-header">Comment</th>
+                <th id="action-header">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -29,7 +29,11 @@
                 <td>2020-12-12 16:20:00</td>
                 <td>2020-12-12 16:20:00</td>
                 <td>shm800 product</td>
-                <td>Add | Modify</td>
+                <td>
+                    <span class="action-add">Add</span>
+                    <span class="action-seperator">|</span>
+                    <span class="action-edit">Edit</span>
+                </td>
             </tr>
             <tr>
                 <td></td>
@@ -38,7 +42,11 @@
                 <td>2020-12-11 17:20:00</td>
                 <td>2020-12-11 17:20:00</td>
                 <td>shm600 product</td>
-                <td>Add | Modify</td>
+                <td>
+                    <span class="action-add">Add</span>
+                    <span class="action-seperator">|</span>
+                    <span class="action-edit">Edit</span>
+                </td>
             </tr>
         </tbody>
     </table>
@@ -47,27 +55,34 @@
         <table id="exampleTable_2" class="display select" width="100%">
             <thead>
                 <tr>
-                    <th class="machine-id-header">MachineID</th>
-                    <th class="created-time-header">CreatedTime</th>
-                    <th class="updated-time-header">UpdatedTime</th>
-                    <th class="comment-header">Comment</th>
-                    <th class="action-header">Action</th>
+                    <th id="inner-blank-header"></th>
+                    <th id="inner-machine-id-header">MachineID</th>
+                    <th id="inner-created-time-header">CreatedTime</th>
+                    <th id="inner-updated-time-header">UpdatedTime</th>
+                    <th id="inner-comment-header">Comment</th>
+                    <th id="inner-action-header">Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td></td>
                     <td>SHM600-01</td>
                     <td>2020-12-11 17:20:00</td>
                     <td>2020-12-11 17:20:00</td>
                     <td>shm600 product</td>
-                    <td>Modify</td>
+                    <td>
+                        <span class="action-edit">Edit</span>
+                    </td>
                 </tr>
                 <tr>
+                    <td></td>
                     <td>SHM600-01</td>
                     <td>2020-12-11 17:20:00</td>
                     <td>2020-12-11 17:20:00</td>
                     <td>shm600 product</td>
-                    <td>Modify</td>
+                    <td>
+                        <span class="action-edit">Edit</span>
+                    </td>
                 </tr>
                 </tfoot>
         </table>

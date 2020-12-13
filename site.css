@@ -1,35 +1,61 @@
-.details-control {
-  width: 20px;
-}
-table {
-  table-layout: fixed !important;
+#exampleTable {
+  width: 1250px;
 }
 
-#exampleTable{
-    width: 1200px;
-}
-
-.machine-type-header {
-  width: 100% !important;
+#machine-type-header {
+  width: 16%;
   background-color: pink;
 }
-.machine-id-header {
+#machine-id-header {
   background-color: red;
-  width: 100% !important;
+  width: 16%;
 }
-.created-time-header {
+#created-time-header {
   background-color: green;
-  width: 100% !important;
+  width: 16%;
 }
-.updated-time-header {
+#updated-time-header {
   background-color: yellow;
-  width: 100% !important;
+  width: 16%;
 }
-.comment-header {
-  background-color: black;
-  width: 100% !important;
+#comment-header {
+  background-color: purple;
+  width: 16%;
 }
-.action-header {
+#action-header {
   background-color: blue;
-  width: 100% !important;
+  width: 16%;
+}
+
+#inner-blank-header {
+  background-color: orange;
+  width: 20%;
+}
+#inner-machine-id-header {
+  background-color: red;
+  width: 16%;
+}
+#inner-created-time-header {
+  background-color: green;
+  width: 16%;
+}
+#inner-updated-time-header {
+  background-color: yellow;
+  width: 16%;
+}
+#inner-comment-header {
+  background-color: purple;
+  width: 16%;
+}
+#inner-action-header {
+  background-color: blue;
+  width: 16%;
+}
+td.details-control {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+td thead {
+  visibility: collapse;
 }
