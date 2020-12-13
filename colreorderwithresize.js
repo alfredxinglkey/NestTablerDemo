@@ -29,7 +29,8 @@ $(document).ready(function () {
         'aoColumnDefs': [{
             'bSortable': false,
             'class': 'details-control',
-            'aTargets': [0]
+            'aTargets': [0],
+            'visible':false,
         }
         ],
         //'aaSorting': [[1, 'asc']],
@@ -60,7 +61,7 @@ $(document).ready(function () {
             });
             iTableCounter = iTableCounter + 1;
             //$(nTr).find("img").first().attr("src", "asset/images/arrow_right.png");
-            $(nTr).find("img").first().css('transform','rotate(-90deg)');
+            $(nTr).find("img").first().css('transform','rotate(90deg)');
         }
     });
 

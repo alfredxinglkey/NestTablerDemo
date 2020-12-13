@@ -1,5 +1,8 @@
-#exampleTable {
-  width: 1850px;
+body #exampleTable_wrapper {
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 1600px !important;
+  padding: auto !important;
 }
 #exampleTable thead {
   text-align: left;
@@ -26,7 +29,7 @@
   width: 16%;
 }
 #inner-blank-header {
-  width: 20%;
+  width: 16%;
 }
 #inner-machine-id-header {
   width: 16%;
