@@ -4,7 +4,8 @@ var oInnerTable;
 var TableHtml;
 
 function fnFormatDetails(table_id, html) {
-    var sOut = "<table id=\"exampleTable_" + table_id + "\">";
+    //var sOut = "<table id=\"exampleTable_" + table_id + "\">";
+    var sOut = `<table id="exampleTable_${table_id}">`;
     sOut += html;
     sOut += "</table>";
     return sOut;
@@ -40,12 +41,14 @@ $(document).ready(function () {
      * Note that the indicator for showing which row is open is not controlled by DataTables,
      * rather it is done here
      */
-    $('#exampleTable tbody tr td.details-control').on('click', function () {
+    //$('#exampleTable tbody tr td.details-control').on('click', function () {
+      $('#exampleTable tbody tr td img.arrow-down').on('click', function () {
         var nTr = $(this).closest('tr');
 
         if (oTable.fnIsOpen(nTr)) {
-
             oTable.fnClose(nTr);
+            //$(nTr).find("img").first().attr("src", "asset/images/arrow_down.png")
+            $(nTr).find("img").first().css('transform','rotate(0deg)');
         } else {
             oTable.fnOpen(nTr, fnFormatDetails(iTableCounter, TableHtml), 'details-control');
             oInnerTable = $('#exampleTable_' + iTableCounter).dataTable({
@@ -56,6 +59,8 @@ $(document).ready(function () {
                 'info':false,
             });
             iTableCounter = iTableCounter + 1;
+            //$(nTr).find("img").first().attr("src", "asset/images/arrow_right.png");
+            $(nTr).find("img").first().css('transform','rotate(-90deg)');
         }
     });
 

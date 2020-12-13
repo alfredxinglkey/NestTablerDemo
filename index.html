@@ -7,16 +7,17 @@
     <link rel="stylesheet" type="text/css" href="site.css">
 </head>
 <body>
-    <button id="btn-show-all-children" type="button">Expand All</button>
-    <button id="btn-hide-all-children" type="button">Collapse All</button>
+    <!-- Expand all & Collapse all -->
+    <!-- <button id="btn-show-all-children" type="button">Expand All</button>
+    <button id="btn-hide-all-children" type="button">Collapse All</button> -->
 
     <table id="exampleTable" class="display">
         <thead>
             <tr>
-                <th id="machine-type-header">MachineType</th>
-                <th id="machine-id-header">MachineID</th>
-                <th id="created-time-header">CreatedTime</th>
-                <th id="updated-time-header">UpdatedTime</th>
+                <th id="machine-type-header">Machine Type</th>
+                <th id="machine-id-header">Machine ID</th>
+                <th id="created-time-header">Created Time</th>
+                <th id="updated-time-header">Updated Time</th>
                 <th id="comment-header">Comment</th>
                 <th id="action-header">Action</th>
             </tr>
@@ -24,12 +25,16 @@
         <tbody>
             <tr>
                 <td></td>
-                <td>SHM800</td>
+                <td class="machine-type-group">
+                    <img class="arrow-down" src="asset/images/arrow_down.png">
+                    <img class="product-image" src="asset/images/SSA600.jpg">
+                    <span class="product-name">SHM800</span>
+                </td>
                 <td></td>
                 <td>2020-12-12 16:20:00</td>
                 <td>2020-12-12 16:20:00</td>
                 <td>shm800 product</td>
-                <td>
+                <td class="action-group">
                     <span class="action-add">Add</span>
                     <span class="action-seperator">|</span>
                     <span class="action-edit">Edit</span>
@@ -37,12 +42,16 @@
             </tr>
             <tr>
                 <td></td>
-                <td>SHM600</td>
+                <td class="machine-type-group">
+                    <img class="arrow-down" src="asset/images/arrow_down.png">
+                    <img class="product-image" src="asset/images/SSB225.jpg">
+                    <span class="product-name">SHM600</span>
+                </td>
                 <td></td>
                 <td>2020-12-11 17:20:00</td>
                 <td>2020-12-11 17:20:00</td>
                 <td>shm600 product</td>
-                <td>
+                <td class="action-group">
                     <span class="action-add">Add</span>
                     <span class="action-seperator">|</span>
                     <span class="action-edit">Edit</span>
@@ -56,9 +65,9 @@
             <thead>
                 <tr>
                     <th id="inner-blank-header"></th>
-                    <th id="inner-machine-id-header">MachineID</th>
-                    <th id="inner-created-time-header">CreatedTime</th>
-                    <th id="inner-updated-time-header">UpdatedTime</th>
+                    <th id="inner-machine-id-header">Machine ID</th>
+                    <th id="inner-created-time-header">Created Time</th>
+                    <th id="inner-updated-time-header">Updated Time</th>
                     <th id="inner-comment-header">Comment</th>
                     <th id="inner-action-header">Action</th>
                 </tr>
@@ -70,8 +79,8 @@
                     <td>2020-12-11 17:20:00</td>
                     <td>2020-12-11 17:20:00</td>
                     <td>shm600 product</td>
-                    <td>
-                        <span class="action-edit">Edit</span>
+                    <td class="action-group">
+                        <span class="inner-action-edit">Edit</span>
                     </td>
                 </tr>
                 <tr>
@@ -80,8 +89,8 @@
                     <td>2020-12-11 17:20:00</td>
                     <td>2020-12-11 17:20:00</td>
                     <td>shm600 product</td>
-                    <td>
-                        <span class="action-edit">Edit</span>
+                    <td class="action-group">
+                        <span class="inner-action-edit">Edit</span>
                     </td>
                 </tr>
                 </tfoot>

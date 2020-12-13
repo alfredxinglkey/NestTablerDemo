@@ -1,5 +1,11 @@
 #exampleTable {
-  width: 1250px;
+  width: 1850px;
+}
+#exampleTable thead {
+  text-align: left;
+}
+#exampleTable th {
+  padding-left: 0 !important;
 }
 #machine-type-header {
   width: 16%;
@@ -40,7 +46,33 @@
 td.details-control {
   margin: 0 !important;
   padding: 0 !important;
+  width: 0 !important;
 }
 td thead {
   visibility: collapse;
+}
+td {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.inner-action-edit{
+  margin-left: 45px;
+}
+.machine-type-group{
+  display: flex;
+  margin: 0% !important;
+  padding: 0% !important;
+}
+.product-image{
+  width: 30px;
+  height: 30px;
+}
+.product-name{
+margin-top: auto;
+margin-bottom: auto;
+margin-left: 10px;
+}
+.arrow-down{
+  width: 30px;
+  height: 30px;
 }
